@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../dist/output.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" />
+</head>
+<body class="bg-gray-800 text-white">
+  <nav class="fixed w-full z-10 top-0 bg-black text-white p-4">
+      <!-- Navbar -->
+      <div class="flex justify-between items-center">
+          <div class="flex items-center">
+              <img src="./multimedia/logo.webp" alt="" class="w-40 h-15">
+          </div>
+          <div class="md:hidden">
+              <button class="text-white" id="menu-toggle">
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                  </svg>
+              </button>
+          </div>
+          <div class="hidden md:flex space-x-4" id="menu">
+              <a href="./index.html" class="hover:bg-gray-700 p-2 rounded">Inici</a>
+              <a href="./list.html" class="hover:bg-gray-700 p-2 rounded">Motor</a>
+              <a href="./credits.html" class="hover:bg-gray-700 p-2 rounded">Crèdits</a>
+          </div>
+      </div>
+  </nav>
+  <div class="pt-20 mx-4 md:mx-20">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <!--Primera linia-->
+    
+      <div class="bg-green-700 p-4 rounded">
+        <h2>Menu1</h2>
+        <div class="flex flex-col 2xl:flex-row items-center">
+            <img src="./multimedia/list/VAMTAC.webp" alt="" class="w-full 2xl:w-full" />
+            <p>Veiculo de combate infanteria. <br />Un vehicle blindat dissenyat
+              per transportar tropes al camp de batalla amb protecció i potència
+              de foc.</p>
+        </div>
+        <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"  onclick="location.href='./info/infoPizarro.html'">
+            Entrar
+        </button>
+      </div>
+
+      <div class="bg-green-700 p-4 rounded">
+        <h2>Pizarro</h2>
+        <div class="flex flex-col 2xl:flex-row items-center">
+          <!-- Utilitzat la classe "flex" per a que els elements estiguin al costat l'un de l'altre -->
+          <img
+            src="./multimedia/list/pizarro.webp"
+            alt="" class="w-full lg:w-full" />
+          <!-- Imatge a l'esquerra -->
+          <p >
+            Veiculo de combate infanteria. <br />Un vehicle blindat dissenyat
+            per transportar tropes al camp de batalla amb protecció i potència
+            de foc.
+          </p>
+          <!-- Text a la dreta -->
+        </div>
+        <button
+          class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onclick="location.href='./info/infoPizarro.html'"
+        >
+          entrar
+        </button>
+      </div>
+      <div class="bg-green-700 p-4 rounded">
+        <h2>Obús 155/52 SIAC</h2>
+        <div class="flex flex-col 2xl:flex-row items-center">
+          <!-- Utilitzat la classe "flex" per a que els elements estiguin al costat l'un de l'altre -->
+          <img src="./multimedia/list/obus.webp" alt="" class="w-full 2xl:w-1/2" />
+          <!-- Imatge a l'esquerra -->
+          <p>
+            <br />
+            Sistema Integrat d'Artilleria de Campanya <br />
+            Un sistema d'artilleria mòbil que proporciona suport de foc a les
+            tropes al camp de batalla.
+          </p>
+          <!-- Text a la dreta -->
+        </div>
+        <button
+          class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onclick="location.href='./info/infoPizarro.html'"
+        >
+          entrar
+        </button>
+      </div>
+      <div class="bg-green-700 p-4 rounded">
+        <h2>VAMTAC</h2>
+        <div class="flex flex-col 2xl:flex-row items-center">
+          <!-- Utilitzat la classe "flex" per a que els elements estiguin al costat l'un de l'altre -->
+          <img
+            src="./multimedia/list/VAMTAC.webp"
+            alt=""
+            class="w-full 2xl:w-1/2"
+          />
+          <!-- Imatge a l'esquerra -->
+          <p>
+            Vehicle d'Alta Mobilitat Tàctic <br />Un vehicle versàtil i lleuger
+            utilitzat en una varietat de rols, incloent transport de tropes i
+            com a ambulància.
+          </p>
+          <!-- Text a la dreta -->
+        </div>
+        <button
+          class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onclick="location.href='./info/infoPizarro.html'"
+        >
+          entrar
+        </button>
+      </div>
+    </div>
+    <!----------------->
+    <!--Segona linia-->
+    <!----------------->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-green-700 p-4 rounded mt-4">
+        <h2>Eurocopter Tigre</h2>
+        <div class="flex flex-col 2xl:flex-row items-center">
+          <!-- Utilitzat la classe "flex" per a que els elements estiguin al costat l'un de l'altre -->
+          <img
+            src="./multimedia/list/eurocopter.webp"
+            alt=""
+            class="w-full 2xl:w-1/2"
+          />
+          <!-- Imatge a l'esquerra -->
+          <p >
+            Un helicòpter d'atac utilitzat per proporcionar suport aeri proper a
+            les tropes a terra.
+          </p>
+          <!-- Text a la dreta -->
+        </div>
+        <button
+        class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onclick="location.href='./info/infoPizarro.html'"
+        >
+          entrar
+        </button>
+      </div>
+
+      <div class="bg-green-700 p-4 rounded mt-4">
+        <h2>Menu1</h2>
+        <div class="flex flex-col 2xl:flex-row items-center">
+          <!-- Utilitzat la classe "flex" per a que els elements estiguin al costat l'un de l'altre -->
+          <img src="./multimedia/list/NH90.webp" alt="" class="w-full 2xl:w-1/2" />
+          <!-- Imatge a l'esquerra -->
+          <p>
+            NH90 <br />
+            Helicòpter de Transport <br />
+            Un helicòpter multi-rol utilitzat per transport de tropes, logística
+            i evacuació mèdica.
+          </p>
+          <!-- Text a la dreta -->
+        </div>
+        <button
+        class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onclick="location.href='./info/infoPizarro.html'"
+        >
+          entrar
+        </button>
+      </div>
+      <div class="bg-green-700 p-4 rounded mt-4">
+        <h2>Menu1</h2>
+        <div class="flex flex-col 2xl:flex-row items-center">
+          <!-- Utilitzat la classe "flex" per a que els elements estiguin al costat l'un de l'altre -->
+          <img
+            src="./multimedia/list/eurofighter.webp"
+            alt=""
+            class="w-full 2xl:w-1/2"
+          />
+          <!-- Imatge a l'esquerra -->
+          <p>
+            Eurofighter Typhoon <br />
+            Caza polivalent de última generació. <br />
+            Caza polivalent de quarta generació desenvolupat conjuntament per
+            Alemanya, Itàlia, Regne Unit i Espanya.
+          </p>
+          <!-- Text a la dreta -->
+        </div>
+        <button
+        class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onclick="location.href='./info/infoPizarro.html'"
+        >
+          entrar
+        </button>
+      </div>
+      <div class="bg-green-700 p-4 rounded mt-4">
+        <h2>Menu1</h2>
+        <div class="flex flex-col 2xl:flex-row items-center">
+          <!-- Utilitzat la classe "flex" per a que els elements estiguin al costat l'un de l'altre -->
+          <img
+            src="./multimedia/list/McDonnellDouglas.webp"
+            alt=""
+            class="w-full 2xl:w-1/2"
+          />
+          <!-- Imatge a l'esquerra -->
+          <p>
+            McDonnell Douglas EF-18 Hornet <br />
+            Caza polivalent. <br />
+            Caza polivalent de fabricació nord-americana, adaptat per Espanya
+            com a EF-18. 
+          </p>
+          <!-- Text a la dreta -->
+        </div>
+        <button
+        class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onclick="location.href='./info/infoPizarro.html'"
+        >
+          entrar
+        </button>
+      </div>
+    </div>
+    <!----------------->
+    <!--Tercera linia-->
+    <!----------------->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-green-700 p-4 rounded mt-4">
+        <h2>Airbus A400M</h2>
+        <div class="flex flex-col 2xl:flex-row items-center">
+          <!-- Utilitzat la classe "flex" per a que els elements estiguin al costat l'un de l'altre -->
+          <img
+            src="./multimedia/list/Airbus.webp"
+            alt=""
+            class="w-full 2xl:w-1/2"
+          />
+          <!-- Imatge a l'esquerra -->
+          <p>
+            Avió de transport militar de fabricació europea amb una gran
+            capacitat de càrrega.
+          </p>
+          <!-- Text a la dreta -->
+        </div>
+        <button
+        class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onclick="location.href='./info/infoPizarro.html'"
+        >
+          entrar
+        </button>
+      </div>
+
+      <div class="bg-green-700 p-4 rounded mt-4">
+        <h2>Lockheed C-130 Hercules</h2>
+        <div class="flex flex-col 2xl:flex-row items-center">
+          <!-- Utilitzat la classe "flex" per a que els elements estiguin al costat l'un de l'altre -->
+          <img
+            src="./multimedia/list/c-130.webp"
+            alt=""
+            class="w-full 2xl:w-1/2"
+          />
+          <!-- Imatge a l'esquerra -->
+          <p>
+            Avió de transport militar de fabricació nord-americana conegut per
+            la seva robustesa i capacitat per operar en condicions adverses i
+            pistes curtes.
+          </p>
+          <!-- Text a la dreta -->
+        </div>
+        <button
+        class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onclick="location.href='./info/infoPizarro.html'"
+        >
+          entrar
+        </button>
+      </div>
+      <div class="bg-green-700 p-4 rounded mt-4">
+        <h2>CASA C-101</h2>
+        <div class="flex flex-col 2xl:flex-row items-center">
+          <!-- Utilitzat la classe "flex" per a que els elements estiguin al costat l'un de l'altre -->
+          <img
+            src="./multimedia/list/c-101.webp"
+            alt=""
+            class="w-full 2xl:w-1/2"
+          />
+          <!-- Imatge a l'esquerra -->
+          <p>
+            Avió d'entrenament de fabricació espanyola utilitzat per formar els
+            pilots de l'Exèrcit de l'Aire.
+          </p>
+          <!-- Text a la dreta -->
+        </div>
+        <button
+        class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onclick="location.href='./info/infoPizarro.html'"
+        >
+          entrar
+        </button>
+      </div>
+      <div class="bg-green-700 p-4 rounded mt-4">
+        <h2>Boeing 707</h2>
+        <div class="flex flex-col 2xl:flex-row items-center">
+          <!-- Utilitzat la classe "flex" per a que els elements estiguin al costat l'un de l'altre -->
+          <img src="./multimedia/list/boin.webp" alt=""             class="w-full 2xl:w-1/2"
+          />
+          <!-- Imatge a l'esquerra -->
+          <p>
+            Originalment un avió comercial de passatgers, la versió de
+            reabastiment en vol està adaptada per proporcionar combustible en
+            l'aire a altres avions.
+          </p>
+          <!-- Text a la dreta -->
+        </div>
+        <button
+        class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onclick="location.href='./info/infoPizarro.html'"
+        >
+          entrar
+        </button>
+      </div>
+    </div>
+    <!----------------->
+    <!--Quarta linia-->
+    <!----------------->
+    
+  </div>
+  </div>
+  <script>
+    // Script per a toggle del menú en dispositius mòbils
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if(menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+        }
+    });
+</script>
+  </body>
+  <footer class="bg-black text-white p-4 mt-8">
+    <div class="container mx-auto flex justify-between items-center">
+      <div>
+        <p>&copy; 2023 Jan Parareda</p>
+      </div>
+      <div class="flex space-x-4">
+        <a href="./index.html" class="hover:underline">Inici</a>
+        <a href="./list.html" class="hover:underline">Motor</a>
+        <a href="./credits.html" class="hover:underline">Crèdits</a>
+      </div>
+    </div>
+  </footer>
+</html>

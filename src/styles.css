@@ -1,0 +1,245 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+#tot {
+    background: #ffffff;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-content: space-between;
+    margin-top: 10%;
+  }
+  
+  /* codi list.html */
+  
+  #liniaPrincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  #liniaSecundaria {
+    justify-content: space-between;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  #bloc {
+    align-items: center;
+    background-color: rgb(75, 83, 32);
+    border: 1px solid rgb(255, 255, 255);
+    width: 96%;
+    height: 82%;
+  
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 0;
+    padding: 0.2%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+  }
+  #bloc img {
+    max-width: 400px;   /* Limita el ancho máximo de las imágenes al 50% del contenedor */
+    display: block;   /* Hace que las imágenes sean de tipo block para poder centrarlas */
+    margin: 0 auto;   /* Centra las imágenes horizontalmente */
+    padding-left: 0px;
+    
+  }
+  #carouselExampleIndicators .carousel-item {
+    transition: none !important;
+  }
+  
+  
+  #subTitol {
+    text-align: center;
+  }
+  
+  /*#primer_bloc {
+    /*flex-1 border mr-4 p-5*/
+  /*}*/
+  
+  .boto{
+    margin-top: 10px;
+  }
+  .bloc {
+    margin-top: 2%;
+    background-color: rgb(75, 83, 32);
+    color: #ffffff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1600px) {
+    /* Adjust this value based on your needs */
+    .flex > img,
+    .flex > p#text {
+      display: block;
+      margin: auto;
+    }
+    .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+    .bloc {
+      height: 300px;
+      width: 600px;
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 600px) {
+    /* Adjust this value based on your needs */
+    .flex > img,
+    .flex > p#text {
+      display: block;
+      margin: auto;
+    }
+    .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+    .bloc {
+      height: 150px;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff00;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #000000;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  #bloc {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  #bloc img {
+    flex: 1 1 35%;
+    max-width: 35%;
+    height: auto;
+  }
+  
+  #textproba {
+    flex: 2 1 60%;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    #bloc img {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    #textproba {
+      flex: 0 0 100%;
+    }
+  }
